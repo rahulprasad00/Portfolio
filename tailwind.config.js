@@ -14,14 +14,21 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-25%)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+          },
+        },
+        animation: {
+          slidein300: "slidein 1s ease 300ms",
+          slidein500: "slidein 1s ease 400ms",
+          slidein700: "slidein 1s ease 700ms",
+          bounce: "bounce 5s ease-in-out infinite ",        
       },
-      animation: {
-        slidein300: "slidein 1s ease 300ms",
-        slidein500: "slidein 1s ease 400ms",
-        slidein700: "slidein 1s ease 700ms",
       },
     },
-  },
-  plugins: [],
-}
-
+    plugins: [],
+  }}
